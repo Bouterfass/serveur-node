@@ -1,0 +1,29 @@
+{
+  "name": "serveur-node",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Bouterfass/serveur-node.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Bouterfass/serveur-node/issues"
+  },
+  "homepage": "https://github.com/Bouterfass/serveur-node#readme",
+  "dependencies": {
+    "dayjs": "^1.11.7",
+    "dotenv": "^16.0.3",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  }
+}

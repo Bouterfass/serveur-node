@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Liste des utilisateurs</title>
+    <link rel="stylesheet" href="/assets/css/style.css" />
+  </head>
+  <body>
+    <h1>Liste des utilisateurs</h1>
+    <% if (studs.length > 0) { %>
+    <table>
+      <thead>
+        <tr>
+          <th>Nom</th>
+          <th>Date de naissance</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <% studs.forEach(function(user) { %>
+        <tr>
+          <td><%= user.name %></td>
+          <td><%= user.birthdate %></td>
+          <td>
+            <form method="POST" action="/users/delete/<%= user.id %>">
+              <button type="submit">Supprimer</button>
+            </form>
+          </td>
+        </tr>
+        <% }); %>
+      </tbody>
+    </table>
+    <% } else { %>
+    <p>Aucun utilisateur trouvé.</p>
+    <% } %>
+    <br />
+    <a href="/">Ajouter un utilisateur</a>
+  </body>
+</html>
